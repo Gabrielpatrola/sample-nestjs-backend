@@ -1,25 +1,6 @@
 version: "3.7"
 
 services:
-  backend:
-    container_name: app_backend
-    restart: always
-    build: .
-    environment:
-      - APP_ENV=development
-      - APP_PORT=9000
-    volumes:
-      - ./src:/var/www/app/src
-      - ./test:/var/www/app/test
-    working_dir: /var/www/app
-    ports:
-      - "9001:9000"
-    links:
-      - mysql
-      - redis
-    depends_on:
-      - mysql
-      - redis
   mysql: 
     container_name: app_mysql
     restart: always
@@ -34,20 +15,15 @@ services:
     - "3308:3306"
     volumes:
     - app_mysql_data:/var/lib/mysql
-  redis: # Example Service
+  redis:
     container_name: app_redis
     restart: always
     image: redis:6.0-alpine
-    expose:
-      - "6379"
+    ports:
+      - "6379:6379"
     volumes:
       - app_redis_data:/data
 
 volumes:
   app_mysql_data:
   app_redis_data:
-
-networks:
-  default:
-    external:
-      name: app-docker
