@@ -140,6 +140,49 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get all lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/lists",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/lists/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"lists",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
