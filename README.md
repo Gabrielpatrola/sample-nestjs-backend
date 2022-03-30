@@ -1,7 +1,7 @@
 # 🤖 Teste Backend Leroy Merlin Brasil
 
 <h1 align="center">
-<img alt="Leroy Merlin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Leroy_Merlin.svg/1200px-Leroy_Merlin.svg.png" height="250px" />
+<img alt="Leroy Merlin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Leroy_Merlin.svg/1200px-Leroy_Merlin.svg.png" />
  <a href="https://www.typescriptlang.org/docs/" target="_blank" rel="noopener">Typescript</a> | <a href="https://docs.nestjs.com/" target="_blank" rel="noopener">NestJs</a>
 </h1>
 
