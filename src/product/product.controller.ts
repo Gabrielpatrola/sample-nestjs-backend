@@ -13,13 +13,17 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { readFileSync } from 'fs';
 import { diskStorage } from 'multer';
 import { parse } from 'papaparse';
-import { ProductInterface } from './product.interface';
+import { ProductInterface, ProductJobInterface } from './product.interface';
 import { ProductsService } from './product.service';
 import { editFileName } from '../utils/file.utils';
+import { ListService } from '../list/list.service';
 
 @Controller('products')
 export class ProductController {
-  constructor(private readonly productsService: ProductsService) {}
+  constructor(
+    private readonly productsService: ProductsService,
+    private readonly listService: ListService,
+  ) {}
 
   @Get('/')
   async findAll() {
@@ -60,8 +64,18 @@ export class ProductController {
       transformHeader: (header) => header.toLowerCase(),
       complete: (results) => results.data,
     });
-    parsedCsv.data.map((item: ProductInterface) =>
-      this.productsService.sendMessage(item),
+
+    const newList = await this.listService.createList({
+      name: file.filename,
+      status: false,
+    });
+
+    this.productsService.sendMessage(
+      parsedCsv.data as any,
+      newList.name,
+      newList.id,
     );
+
+    return newList;
   }
 }

@@ -1,6 +1,7 @@
 import { BullModule } from '@nestjs/bull';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ListModule } from '../list/list.module';
 import { ProductsConsumer } from './product.consumer';
 import { ProductController } from './product.controller';
 import { Product } from './product.entity';
@@ -13,6 +14,7 @@ import { ProductsService } from './product.service';
     BullModule.registerQueue({
       name: 'products-queue',
     }),
+    ListModule,
   ],
   controllers: [ProductController],
   providers: [ProductsService, ProductsConsumer, ProductRepository],

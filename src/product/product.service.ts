@@ -18,14 +18,16 @@ export class ProductsService {
       this.connection.getCustomRepository(ProductRepository);
   }
 
-  async sendMessage(product: ProductInterface) {
+  async sendMessage(product: ProductInterface, name: string, id: number) {
     await this.queue.add('products-job', {
-      product: product,
+      products: product,
+      listName: name,
+      listId: id,
     });
   }
 
-  async createProduct(data: ProductJobInterface) {
-    this.productRepository.createAndSave(data.product as Product);
+  async createProduct(data: ProductInterface) {
+    this.productRepository.createAndSave(data as Product);
   }
 
   async findAll() {
