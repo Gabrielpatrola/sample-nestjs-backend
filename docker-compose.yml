@@ -12,7 +12,7 @@ services:
       - MYSQL_PASSWORD=app
       - MYSQL_DATABASE=app_docker
     ports:
-    - "3308:3306"
+    - "3306:3306"
     volumes:
     - app_mysql_data:/var/lib/mysql
   redis:
