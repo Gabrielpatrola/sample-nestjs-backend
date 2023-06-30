@@ -1,9 +1,4 @@
-# 🤖 Teste Backend Leroy Merlin Brasil
-
-<h1 align="center">
-<img alt="Leroy Merlin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Leroy_Merlin.svg/1200px-Leroy_Merlin.svg.png" />
- <a href="https://www.typescriptlang.org/docs/" target="_blank" rel="noopener">Typescript</a> | <a href="https://docs.nestjs.com/" target="_blank" rel="noopener">NestJs</a>
-</h1>
+# 🤖 Sample backend with NestJs
 
 <p align="center">
   <img alt="Develop by" src="https://img.shields.io/badge/Develop%20by-Gabriel%20Patrola-blue?style=flat&logo=Awesome-Lists">
@@ -22,35 +17,13 @@
 
 ## 💭 Sobre
 
-### Escopo do Teste
-
-O objetivo do teste será construir uma API RESTful.
-
-Será avaliado a capacidade de estimativa do(a) desenvolvedor(a), em conjunto com a capacidade de desenvolver uma nova API, e seguindo bons padrões de código.
-
 ### Funcionalidade da interface
 
-A API deverá atender os seguintes critérios:
+A API atende os seguintes critérios:
 
 - Receberá uma planilha de produtos (segue em anexo), que deverá ser processada em background (queue)
 - Ter um endpoint que informe se a planilha foi processada com sucesso ou não
 - Seja possível visualizar, atualizar e apagar os produtos (só é possível criar novos produtos via planilha).
-
-### Construção da API
-
-Em critérios de tecnologia, é esperado:
-
-- Teste seja feito utilizando a linguagem e framework que você está mais confortável
-- Testes automatizados
-- Versionar o código no Github ou Gitlb
-- Utilizar Queue
-- RESTful
-- Documentação de código
-
-### Observações
-
-- Não é necessário fazer uma interface de usuário para consumir essa API
-- Não tenha medo de fazer perguntas, de verdade!
 
 ## 👨‍💻 Tecnologias Utilizadas
 
@@ -117,4 +90,4 @@ Crie um arquivo chamado de '.env' copiando as informações existentes no arquiv
 
 ---
 
-<sup> Feito com 💙 por <a href="https://github.com/gabrielpatrola" target="_blank" rel="noopener">Gabriel Patrola</a> para a vaga da <a href="https://www.leroymerlin.com.br/" target="_blank" rel="noopener">Leroy Merlin</a>.</sup>
+<sup> Feito com 💙 por <a href="https://github.com/gabrielpatrola" target="_blank" rel="noopener">Gabriel Patrola</a>.
