@@ -2,7 +2,7 @@
 
 <p align="center">
   <img alt="Develop by" src="https://img.shields.io/badge/Develop%20by-Gabriel%20Patrola-blue?style=flat&logo=Awesome-Lists">
-  <a href="./assets/leroy-equests.postman_collection.json" target="_blank" rel="noopener"><img alt="Run in Postman" src="https://run.pstmn.io/button.svg"></a>
+  <a href="./assets/sample-requests.postman_collection.json" target="_blank" rel="noopener"><img alt="Run in Postman" src="https://run.pstmn.io/button.svg"></a>
 <p>
 
 <h3 align="center">
@@ -49,9 +49,9 @@ Primeiro clone o repositório em seu computador, por meio do terminal utilizando
 
 ```sh
   # Clone o repositório
-  $ git clone https://github.com/Gabrielpatrola/teste-leroy-merlin.git
+  $ git clone https://github.com/Gabrielpatrola/sample-nestjs-backend.git
   # Entre na pasta raiz da aplicação
-  $ cd teste-leroy-merlin
+  $ cd sample-nestjs-backend
 ```
 
 2. Instalar as dependências da aplicação
@@ -86,7 +86,7 @@ Crie um arquivo chamado de '.env' copiando as informações existentes no arquiv
 
 ## 📚 Material de apoio
 
-- **<a href="./assets/leroy-equests.postman_collection.json" target="_blank" rel="noopener">Postman</a>** com as requisições
+- **<a href="./assets/sample-requests.postman_collection.json" target="_blank" rel="noopener">Postman</a>** com as requisições
 
 ---
 
