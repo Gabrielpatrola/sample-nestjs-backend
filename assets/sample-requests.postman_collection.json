@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "b8594a2a-8e03-4cda-acf0-3f7d5f53a9fb",
-		"name": "Leroy requests",
+		"name": "Sample requests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -16,7 +16,7 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/Users/gabriel/Desktop/patrola/estudos/teste-leroy-merlin/products.csv"
+							"src": "/Users/gabriel/Desktop/patrola/estudos/sample-requests/products.csv"
 						}
 					],
 					"options": {
